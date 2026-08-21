@@ -1,0 +1,42 @@
+{
+  "name": "enterprise-signup-api",
+  "version": "1.0.0",
+  "description": "Enterprise-grade Signup API with Node.js, Express, MongoDB and Layered Monolithic Architecture",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "mocha \"tests/**/*.test.js\" --exit",
+    "test:watch": "mocha \"tests/**/*.test.js\" --watch",
+    "test:integration": "node scripts/test-apis.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "enterprise",
+    "monolith",
+    "signup",
+    "auth"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.10.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^11.8.0",
+    "nodemon": "^3.1.9",
+    "sinon": "^22.1.0"
+  }
+}
